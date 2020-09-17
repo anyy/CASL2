@@ -1,0 +1,5 @@
+PRG	START
+	LD	GR1,A
+	RET
+A	DC	5
+	END
