@@ -1,0 +1,13 @@
+;do-while(条件部後置き型)
+LP1	START
+	LAD	GR1,0	;GR1の初期値を0とする
+LOOP	LD	GR2,GR1
+	LD	GR3,GR2
+	LD	GR4,GR3
+	ADDA	GR1,C1	;GR1を1増やす
+	CPA	GR1,N   ;カウンタと繰り返し回数を比較
+	JMI	LOOP    ;条件によってLOOPへ分岐
+	RET
+N	DC	3
+C1	DC	1
+	END
