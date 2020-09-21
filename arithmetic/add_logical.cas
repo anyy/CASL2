@@ -1,3 +1,4 @@
+;加算結果が65535を超える場合にオーバーフローとなる。
 ADD1	START
 	LD	GR1,AA
 	ADDL	GR1,BB
