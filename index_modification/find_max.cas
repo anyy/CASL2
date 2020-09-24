@@ -1,0 +1,21 @@
+PROG	START
+	LAD	GR1,0
+	LAD	GR2,0
+	LD	GR3,DATA
+LOOP	LD  	GR2,DATA,GR1
+	CPA	GR3,GR2
+	JPL	SKIP
+	LD 	GR3,GR2
+SKIP  	LAD 	GR1,1,GR1
+    	CPA 	GR1,N
+      	JMI 	LOOP
+      	ST  	GR3,MAX
+     	RET
+N   	DC  	5
+MAX   	DS  	1
+DATA  	DC  	3
+     	DC 	2
+      	DC  	5
+      	DC  	4
+      	DC  	1
+      	END
