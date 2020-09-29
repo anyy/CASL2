@@ -1,0 +1,10 @@
+; 取り出したいビットゾーンを残して、不要なビットゾーンを隠す
+PROG	START
+	LD	GR1,DATA
+	AND	GR1,MASK4
+	ST	GR1,DATA2
+	RET
+DATA	DC	#1369
+MASK4	DC	#000F
+DATA2	DS	1
+	END
