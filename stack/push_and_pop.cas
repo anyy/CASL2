@@ -1,0 +1,14 @@
+; push: スタックポインタの値を1論理減算し、メモリのスタックポインタ番地に実行アドレスをストア
+; pop: メモリのスタックポインタが示すアドレスの値をレジスタにロードし、スタックポインタの値を１論理加算する
+STCK1	START
+	PUSH	AA
+	PUSH	BB
+	PUSH	CC
+	POP	GR1
+	POP	GR2
+	POP	GR3
+	RET
+AA	DC	#0001
+BB	DC	#0002
+CC	DC	#0003
+	END

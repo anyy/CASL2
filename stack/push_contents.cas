@@ -1,0 +1,9 @@
+; 0+(GR1)=GR1が有効アドレスとなり、
+; ラベルAAに定義されている定数をスタックにプッシュできる
+STCK2	START
+	LD	GR1,AA
+	PUSH	0,GR1
+	POP	GR2
+	RET
+AA	DC	#000F
+	END
