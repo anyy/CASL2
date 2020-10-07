@@ -1,0 +1,8 @@
+; IN 入力領域,入力文字長領域
+; 入力領域は256語長の作業領域を確保する
+IN	START
+	IN	DATA,NUM
+	RET
+NUM	DS	1
+DATA	DS	256
+	END

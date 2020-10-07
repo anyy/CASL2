@@ -1,0 +1,7 @@
+; OUT 出力領域,出力文字長領域
+OUT	START
+	OUT	DATA,NUM
+	RET
+NUM	DC	11
+DATA	DC	'ABC abc 123'
+	END
